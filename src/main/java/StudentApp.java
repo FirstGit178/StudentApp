@@ -1,26 +1,24 @@
+package ie.atu.week3;
+
 import java.util.Scanner;
 
 public class StudentApp {
-
-    public static void main(String[] args) {
-
-        getDetails();
-        getDetails1();
-        getDetails2();
-        getDetails3();
-    }
-    public static String[] getDetails()
+    public static void main(String[] args)
     {
+        Scanner studentInput = new Scanner(System.in);
+        //get details of first student
+        System.out.println("Please enter first students name: ");
+        String studentName = studentInput.nextLine();
 
-        Scanner sc = new Scanner(System.in);
-        //prompting for details for products
-        String[] details = new String[3];
-        System.out.println("Please enter name");
-        String name = sc.nextLine();
-        System.out.println("Please enter email");
-        String email = sc.nextLine();
-        System.out.println("Please enter course");
-        String course = sc.nextLine();
-        return details;
+        System.out.println("Please enter first students email: ");
+        String studentEmail = studentInput.nextLine();
+
+        System.out.println("Please enter first students course: ");
+        String studentCourse = studentInput.nextLine();
+
+        Student firstStudent = new Student();
+        firstStudent.setNameStudent(studentName);
+        firstStudent.setEmailStudent(studentEmail);
+        firstStudent.setCourseStudent(studentCourse);
     }
 }
