@@ -20,5 +20,19 @@ public class StudentApp {
         firstStudent.setNameStudent(studentName);
         firstStudent.setEmailStudent(studentEmail);
         firstStudent.setCourseStudent(studentCourse);
+
+        //get details of second student
+        System.out.println("Please enter second students name: ");
+        studentName = studentInput.nextLine();
+
+        System.out.println("Please enter second students email: ");
+        studentEmail = studentInput.nextLine();
+
+        System.out.println("Please enter second students course: ");
+        studentCourse = studentInput.nextLine();
+
+        Student secondStudent = new Student(studentName);
+        secondStudent.setEmailStudent(studentEmail);
+        secondStudent.setCourseStudent(studentCourse);
     }
 }

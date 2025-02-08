@@ -12,6 +12,12 @@ public class Student
         courseStudent = "";
     }
 
+    public Student(String nameStudent) {
+        this.nameStudent = nameStudent;
+        emailStudent = "";
+        courseStudent = "";
+    }
+
     public String getNameStudent() {
         return nameStudent;
     }
