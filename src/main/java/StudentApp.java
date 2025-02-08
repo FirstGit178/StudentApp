@@ -34,5 +34,18 @@ public class StudentApp {
         Student secondStudent = new Student(studentName);
         secondStudent.setEmailStudent(studentEmail);
         secondStudent.setCourseStudent(studentCourse);
+
+        //get details of third student
+        System.out.println("Please enter third students name: ");
+        studentName = studentInput.nextLine();
+
+        System.out.println("Please enter third students email: ");
+        studentEmail = studentInput.nextLine();
+
+        System.out.println("Please enter third students course: ");
+        studentCourse = studentInput.nextLine();
+
+        Student thirdStudent = new Student(studentName, studentEmail, studentCourse);
+
     }
 }
