@@ -18,6 +18,12 @@ public class Student
         courseStudent = "";
     }
 
+    public Student(String nameStudent, String emailStudent, String courseStudent) {
+        this.nameStudent = nameStudent;
+        this.emailStudent = emailStudent;
+        this.courseStudent = courseStudent;
+    }
+
     public String getNameStudent() {
         return nameStudent;
     }
